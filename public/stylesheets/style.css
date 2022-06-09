@@ -76,8 +76,7 @@ header {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -116,6 +115,38 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+/* Criteria */
+.criteria {
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.criteria div {
+  padding: 8px 0;
+}
+
+.criteria #length {
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  width: 100px;
+  -webkit-appearance: none;
+}
+
+#length::-webkit-outer-spin-button,
+#length::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#lowercase,
+#uppercase,
+#numbers,
+#special-characters {
+  width: 18px;
+  height: 18px
 }
 
 @media (max-width: 690px) {
