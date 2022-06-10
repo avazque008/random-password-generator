@@ -20,8 +20,8 @@ function generatePasswordArr() {
   let passwordArr = [];
 
   if (!lowercase.checked && !uppercase.checked && !numbers.checked && !specialCharacters.checked) {
-    alert('Choose what to include in your password!');
-    return '';
+    alert('Choose what to include in your password, please!');
+    return;
   }
 
   if (lowercase.checked) {
