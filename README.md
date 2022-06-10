@@ -20,7 +20,7 @@ A web application that generates random passwords based on a criteria. A user wi
  
 ## Usage
 
- As an web application the user must visit, through a web browser,  .
+ As an web application the user must visit, through a web browser, https://avazque008.github.io/random-password-generator/ .
 
 ## License
 
@@ -63,4 +63,6 @@ If you require any further information / assistance, please feel free to contact
 * [Github Profile](https://github.com/avazque008)
 
 ## Web Application Deployemnt URL
+
+ https://avazque008.github.io/random-password-generator/
 
