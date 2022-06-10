@@ -45,7 +45,29 @@ function generatePasswordArr() {
 };
 
 // Generate Password
+function generatePassword() {
 
+  const criteriaArray = generatePasswordArr();
+
+  let passwordLength = parseInt(length.value);
+  let password = '';
+
+  if (passwordLength < 8 || !passwordLength) {
+    passwordLength = 8;
+  } else if (passwordLength > 128) {
+    passwordLength = 128;
+  }
+
+  for (let i = 0; i < passwordLength; i++) {
+    let randIndex = Math.floor(Math.random() * criteriaArray.length);
+
+    let randomLetter = criteriaArray[randIndex];
+    
+    password += randomLetter;
+  }
+
+  return password;
+}
 
 // Get references to the #generate element
 const generateBtn = document.querySelector("#generate");
