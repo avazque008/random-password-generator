@@ -40,7 +40,7 @@ function generatePasswordArr() {
     specialCharArr.forEach(letter => passwordArr.push(letter));
 
   }
-  
+
   return passwordArr;
 };
 
@@ -49,24 +49,28 @@ function generatePassword() {
 
   const criteriaArray = generatePasswordArr();
 
-  let passwordLength = parseInt(length.value);
-  let password = '';
+  if (criteriaArray) {
+    let passwordLength = parseInt(length.value);
+    let password = '';
 
-  if (passwordLength < 8 || !passwordLength) {
-    passwordLength = 8;
-  } else if (passwordLength > 128) {
-    passwordLength = 128;
+    if (passwordLength < 8 || !passwordLength) {
+      passwordLength = 8;
+    } else if (passwordLength > 128) {
+      passwordLength = 128;
+    }
+
+    for (let i = 0; i < passwordLength; i++) {
+      let randIndex = Math.floor(Math.random() * criteriaArray.length);
+
+      let randomLetter = criteriaArray[randIndex];
+
+      password += randomLetter;
+    }
+
+    return password;
+  } else {
+    return 'Select a Criteria!'
   }
-
-  for (let i = 0; i < passwordLength; i++) {
-    let randIndex = Math.floor(Math.random() * criteriaArray.length);
-
-    let randomLetter = criteriaArray[randIndex];
-    
-    password += randomLetter;
-  }
-
-  return password;
 }
 
 // Get references to the #generate element

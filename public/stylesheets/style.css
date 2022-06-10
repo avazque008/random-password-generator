@@ -134,6 +134,7 @@ button[disabled] {
   padding: 12px;
   width: 100px;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 #length::-webkit-outer-spin-button,
