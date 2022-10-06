@@ -3,7 +3,7 @@
 
 ## Description
 
-A web application that generates random passwords based on a criteria. A user will have the opportunity to choose how many characters their password should have and what type of characters they want to include in their password. Whether or not to include lowercase, uppercase, numeric, and/or special characters, with at least one character type being selected. The password by default will be at least 8 characters and no more than 128 characters long.
+Password Generator is a web application that generates random passwords based on criteria. Users can choose how many characters their password should have and what type of characters they want to include in their password. Users can decide on their password to include lowercase, uppercase, numbers, or special characters. By default, the password will be at least eight characters and no more than one hundred twenty-eight characters long.
 
 #### Built With
 
