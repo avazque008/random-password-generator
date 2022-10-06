@@ -3,7 +3,7 @@
 
 ## Description
 
-A web application that generates random passwords based on a criteria. A user will have the opportunity to choose how many characters their password should have and what type of characters they want to include in their password. Whether or not to include lowercase, uppercase, numeric, and/or special characters, at least one character type should be selected. The password by default will be at least 8 characters and no more than 128 characters long.
+A web application that generates random passwords based on a criteria. A user will have the opportunity to choose how many characters their password should have and what type of characters they want to include in their password. Whether or not to include lowercase, uppercase, numeric, and/or special characters, with at least one character type being selected. The password by default will be at least 8 characters and no more than 128 characters long.
 
 #### Built With
 
